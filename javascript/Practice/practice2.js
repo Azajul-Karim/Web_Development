@@ -67,3 +67,9 @@ for (let i = 5; i <= 50; i+=5) {
     console.log(i)
 }
 
+// practice ten
+//Random Number
+console.log('Random Number');
+let num = Math.floor(Math.random() * 5) + 20;
+console.log(num);
+

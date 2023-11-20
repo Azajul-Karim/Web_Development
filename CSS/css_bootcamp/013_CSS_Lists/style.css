@@ -1,4 +1,4 @@
-/* ul {
+ul {
   list-style-type: disc;
   list-style-type: square;
   list-style-type: circle;
@@ -8,13 +8,14 @@
   list-style-type: none;
 
   list-style-image: url(hand.png);
+  list-style-type: square;
 
   list-style-position: outside;
   margin: 0;
   padding: 0;
   list-style-position: inside;
   margin-left: 25px;
-} */
+}
 ul {
   background: tomato;
   padding: 25px;

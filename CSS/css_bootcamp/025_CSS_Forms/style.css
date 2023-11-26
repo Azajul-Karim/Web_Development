@@ -1,17 +1,18 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
+  font-family: "poppins", sans-serif;
 }
+
 .contact {
   width: 80%;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   margin: 20px auto;
   padding: 5%;
   text-align: center;
 }
+
 .contact h2 {
   font-weight: bold;
-  font-size: 35px;
+  font-style: 35px;
   margin-bottom: 0;
 }
 .contact p {
@@ -20,40 +21,45 @@ body {
 .contact form {
   margin-top: 25px;
 }
+
 .child_form {
   width: 100%;
   margin-bottom: 15px;
   text-align: left;
 }
+
 .child_form label {
   display: block;
   margin-bottom: 5px;
 }
+
 .child_form input,
-.child_form select,
-.child_form textarea {
-  border: 1px solid #ddd;
+.child_form textarea,
+.child_form select {
+  border: 1px solid #c7c4c4;
   border-radius: 5px;
   padding: 10px 3%;
   width: 94%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "poppins", sans-serif;
 }
 .child_form select {
   width: 100%;
 }
-.child_form input[type='button'] {
+.child_form:last-child {
+  margin-bottom: 0;
+}
+
+.child_form input[type="button"] {
   width: 200px;
   background: blueviolet;
   border: 1px solid blueviolet;
   color: #fff;
   cursor: pointer;
 }
-.child_form input[type='button']:hover {
+
+.child_form input[type="button"]:hover {
   width: 200px;
-  background: black;
-  border: 1px solid black;
+  background: rgb(43, 12, 71);
+  border: 1px solid rgb(44, 14, 73);
   color: #fff;
-}
-.child_form:last-child {
-  margin-bottom: 0px;
 }

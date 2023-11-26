@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
 }
 .one {
@@ -14,24 +14,27 @@ body {
   height: 100px;
   margin-top: 20px;
   margin-left: 15px;
-  /* transition: idth 0.5s, height 3s, border 5s; */
-  transition: 4s;
-  transition-timing-function: ease-in-out;
+  transition: all ease 1s, height 1s, background 1s, border 1s;
+
+  transition-timing-function: ease-in;
   transition-delay: 1s;
 }
+
 .one:hover {
   border: 15px solid salmon;
   width: 400px;
-  height: 350px;
+  height: 400px;
+  background: deeppink;
 }
 
 a {
   font-size: 35px;
   font-weight: bold;
   color: red;
-
   transition: 1s;
 }
+
 a:hover {
   color: blue;
+  font-size: 50px;
 }

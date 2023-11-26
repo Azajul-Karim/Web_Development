@@ -22,12 +22,12 @@ body {
   background-position: center center;
 }
 body::before {
-  content: 'Element';
+  content: "Element";
   background-image: url(bg2.jpg);
   background-size: 100px 300px;
 }
 body::after {
-  content: 'Element';
+  content: "Element";
   background-image: url(bg2.jpg);
   background-size: 100px 300px;
 }

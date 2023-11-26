@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
 }
 .one {
@@ -15,12 +15,21 @@ body {
   margin-top: 20px;
   margin-left: 15px;
   transition: 0.5s;
+  text-align: center;
+  padding-top: 15px;
 }
 .one:hover {
-  /* transform: translate(25px, 20px); */
-  /* transform: rotate(-180deg); */
+  transform: translate(25px, 20px);
+  transform: rotate(180deg);
   /* transform: scale(2, 4); */
   /* transform: skew(-25deg); */
-  transform: matrix(1, 0.5, 3, 2, 0.1, 1);
-  /* transform: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()); */
+  /* transform: matrix(1, 0.5, 3, 2, 0.1, 1); */
+  /* transform: matrix(
+    scaleX(),
+    skewY(),
+    skewX(),
+    scaleY(),
+    translateX(),
+    translateY() 
+  );*/
 }

@@ -57,14 +57,14 @@ const regulerUser = {
   },
 }
 
-console.log(regulerUser.fullName.firstName);
+// console.log(regulerUser.fullName.firstName);
 
 const myObj = {1: 'a', 2: 'b'};
 const myObj2 = {3: 'a', 4: 'b'};
 
 // const myObj3 = Object.assign({}, myObj, myObj2);
 const myObj3 = {... myObj, ...myObj2};
-console.log(myObj3);
+// console.log(myObj3);
 
 const users = [{
   id : 1,
@@ -78,8 +78,24 @@ const users = [{
 }
 ];
 
-console.log(users);
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
+// console.log(users);
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('name'));
+// console.log(tinderUser.hasOwnProperty('name'));
+
+//object destructuring
+
+const course = {
+  name : 'Javascript',
+  duration : '3 months',
+  price : 1000,
+  teacher : 'Azajul Topu',
+}
+const {teacher} = course;
+// console.log(teacher);
+
+const {teacher: instructor } = course;
+// console.log( instructor);
+
+

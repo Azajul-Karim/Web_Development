@@ -33,31 +33,44 @@ function loginUserMessage(username = "Guest") {
 // console.log(loginUserMessage("Topu"));
 // console.log(loginUserMessage());
 
-
-function calculateCartPrice(...num1){
-  return num1 
+function calculateCartPrice(...num1) {
+  return num1;
 }
-const result3= calculateCartPrice(200,400,500)
+const result3 = calculateCartPrice(200, 400, 500);
 // console.log(result3)
 
 const user = {
   name: "Topu",
   age: 25,
   email: "topu@gmail.com",
-}
+};
 
-function getUserInfo(anyObject){
-  console.log(`Name: ${anyObject.name}, Age: ${anyObject.age}, Email: ${anyObject.email}`);
+function getUserInfo(anyObject) {
+  console.log(
+    `Name: ${anyObject.name}, Age: ${anyObject.age}, Email: ${anyObject.email}`
+  );
 }
 // getUserInfo(user)
-getUserInfo({name: "Topu", age: 25
-})
+getUserInfo({ name: "Topu", age: 25 });
 
-const newArray = [200, 400, 500]
+const newArray = [200, 400, 500];
 
-function returnSecondElement(array){
-  return array[1]
+function returnSecondElement(array) {
+  return array[1];
 }
 // console.log(returnSecondElement(newArray))
 // console.log(returnSecondElement([200, 400, 500]))
 
+//Immediately Invoked Function Expression (IIFE)
+
+(function IIFE() {
+  console.log("IIFE");
+})();
+
+(() => {
+  console.log("IIFE");
+})();
+
+((name) => {
+  console.log(`IIFE ${name}`);
+})('Topu');

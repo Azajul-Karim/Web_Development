@@ -101,4 +101,4 @@ const sum = myNumbers.reduce((acc, num) => {
 myNumbers.reduce((acc,num) => {
   console.log(`Accumulator: ${acc}, Current Number: ${num}`);
   return acc + num;
-},0);
+},0); 

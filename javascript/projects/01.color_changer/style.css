@@ -24,7 +24,7 @@ span {
 .button {
   width: 100px;
   height: 100px;
-  border: solid rgb(49, 43, 43) 2px;
+  border: solid black 2px;
   display: inline-block;
 }
 

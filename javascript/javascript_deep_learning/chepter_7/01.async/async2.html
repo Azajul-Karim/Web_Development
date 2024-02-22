@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async</title>
+  </head>
+  <body>
+    <h1>Async Project Two</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    const stopButton = document.getElementById("stop");
+    const startButton = document.getElementById("start");
+
+    let intervalId;
+
+    startButton.addEventListener("click", () => {
+      intervalId = setInterval(() => {
+        console.log(
+          new Date().toLocaleTimeString("en-US", {
+            hour12: false,
+          })
+        );
+      }, 1000);
+    });
+
+    stopButton.addEventListener("click", () => {
+      clearInterval(intervalId);
+    });
+  </script>
+</html>

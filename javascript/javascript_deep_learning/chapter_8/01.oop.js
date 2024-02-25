@@ -18,9 +18,12 @@ function User(userName, loginCount, signedIn){
   this.loginCount = loginCount;
   this.signedIn = signedIn;
 
-  return this;
+  // return this; 
 }
 
 const userOne = new User("Topu", 32, true);
+const userTwo = new User("John", 32, false);
 
 console.log(userOne);
+console.log(userTwo);
+// console.log(userOne.constructor);

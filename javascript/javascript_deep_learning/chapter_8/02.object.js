@@ -93,3 +93,33 @@ Teacher.__proto__ = TASupport;
 
 //modern syntax
 Object.setPrototypeOf(Teacher, TASupport);
+
+
+let anotherUser = "Azajul Karim  "
+
+String.prototype.trueLenght = function () {
+  console.log(`${this}`);
+  console.log(this.name);
+  console.log(`True length is ${this.trim().length}`);
+};
+
+anotherUser.trueLenght();
+"John Doe".trueLenght();
+"   John Doe   ".trueLenght();
+
+//call
+
+function setUserName(name) {
+  // complex db call
+  this.name = name;
+  console.log('called');
+}
+
+function createUser(username,email, password) {
+  this.email = email;
+  this.password = password;
+  setUserName.call(this,username);
+}
+
+const user = new createUser("John", "topu@gmail.com", "1234");
+console.log(user);

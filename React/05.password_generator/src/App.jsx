@@ -19,14 +19,14 @@ function App() {
       let char = Math.floor(Math.random() * str.length + 1);
       pass += str.charAt(char);
     }
-
+ 
     setPassword(pass);
   }, [length, numberAllowed,  charAllowed, setPassword]);
 
   const copyPasswordToClipboard = useCallback(() => {
     passwordRef.current?.select();
     passwordRef.current?.setSelectionRange(0, 999);
-    window.navigator.clipboard.writeText(password);
+    window.navigator.clipboard.writeText(password); 
   }, [password]);
 
   useEffect(() => {

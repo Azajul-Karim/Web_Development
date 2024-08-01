@@ -1,7 +1,7 @@
 //forEach
 let arr = [1, 2, 3, 4, 5];
 
-arr.forEach(function(el){
+arr.forEach(function (el) {
     // console.log(el);
 })
 
@@ -10,9 +10,9 @@ arr.forEach((el) => {
 })
 
 let arr2 = [
-    {name: 'John', age: 25},
-    {name: 'Jane', age: 22},
-    {name: 'Jack', age: 30}
+    { name: 'John', age: 25 },
+    { name: 'Jane', age: 22 },
+    { name: 'Jack', age: 30 }
 ]
 
 arr2.forEach((el) => {
@@ -31,11 +31,11 @@ let squre = num.map((el) => {
 // console.log(num);
 
 let gpa =
-[
-    {name: 'John', gpa: 3.5},
-    {name: 'Jane', gpa: 3.8},
-    {name: 'Jack', gpa: 3.2}
-]
+    [
+        { name: 'John', gpa: 3.5 },
+        { name: 'Jane', gpa: 3.8 },
+        { name: 'Jack', gpa: 3.2 }
+    ]
 
 gpa.map((el) => {
     console.log(el.name + ' ' + el.gpa);
@@ -52,9 +52,9 @@ let even = nums.filter((el) => {
 // console.log(even)
 
 let students = [
-    {name: 'John', gpa: 3.5},
-    {name: 'Jane', gpa: 3.8},
-    {name: 'Jack', gpa: 3.2}
+    { name: 'John', gpa: 3.5 },
+    { name: 'Jane', gpa: 3.8 },
+    { name: 'Jack', gpa: 3.2 }
 ]
 
 let highGpa = students.filter((el) => {
@@ -86,7 +86,65 @@ let someEven = numbers2.some((el) => {
 
 //reduce
 
+let sum = numbers.reduce((acc, el) => {
+    return acc + el;
+}, 0)
+
+console.log(sum);
+
+let maxNum = numbers.reduce((acc, el) => {
+    if (el > acc) {
+        return el;
+    } else {
+        return acc;
+    }
+}, 0)
+
+// console.log(maxNum);
 
 
 
+//default parameters
 
+function add(a, b = 0) {
+    return a + b;
+}
+
+console.log(add(5, 10));
+
+//spread operator
+
+let arr3 = [1, 2, 3, 4, 5];
+let arr4 = [6, 7, 8, 9, 10];
+
+let arr5 = [...arr3, ...arr4];
+
+// console.log(arr5);
+
+let obj1 = { name: 'John', age: 25 };
+let obj2 = { ...obj1, gpa: 3.5 };
+
+// console.log(obj2);
+
+//rest operator
+
+function sum2(...args) {
+    return args.reduce((acc, el) => {
+        return acc + el;
+    }, 0)
+}
+
+// console.log(sum2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+
+//destructuring
+
+let arr6 = [1, 2, 3, 4, 5];
+let [a, b, c, d, e] = arr6;
+
+// console.log(a, b, c, d, e);
+
+let obj3 = { name: 'John', age: 25, cgpa: 3.5 };
+
+let { name, age, cgpa } = obj3;
+
+console.log(name, age, gpa);

@@ -1,0 +1,12 @@
+h1 {
+  /* border-style: inset; */
+  /* border-width: 10px; */
+  border-color: aquamarine;
+
+  /* border: 5px solid aquamarine; */
+  /* border-radius: 50px; */
+  border-right: 5px solid greenyellow;
+  border-left: 5px dashed greenyellow;
+  border-top: 5px double greenyellow;
+  border-bottom: 5px groove greenyellow;
+}

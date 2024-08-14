@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: tomato;
+  /* text-align: center; */
+  /* text-align: justify; */
+  text-align: right;
+}
+
+p {
+  margin-top: 20px;
+}
+.one {
+  text-align: center;
+  text-align-last: center;
+}
+
+.two {
+  text-align: center;
+}
+
+.three {
+  /* derection: rtl; */
+  unicode-bidi: bidi-override;
+}
+
+.baseline {
+  vertical-align: baseline;
+}
+
+.text_top {
+  vertical-align: text-top;
+}
+
+.text_bottom {
+  vertical-align: text-bottom;
+}
+
+a {
+  /* text-decoration: none; */
+  /* text-decoration: overline underline; */
+  text-decoration: line-through;
+}
+
+h2 {
+  text-transform: capitalize;
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: initial;
+}
+
+p {
+  /* text-indent: 100px; */
+  /* letter-spacing: 2px; */
+  /* line-height: 20px; */
+  /* text-transform: capitalize; */
+  /* white-space: nowrap; */
+  white-space: break-spaces;
+  word-spacing: 10px;
+}

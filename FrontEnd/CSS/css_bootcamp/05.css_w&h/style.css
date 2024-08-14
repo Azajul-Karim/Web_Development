@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* html,
+body {
+  height: 100%;
+} */
+
+/* fixed  */
+/* .parent {
+  background: #574b90;
+  color: #fff;
+  width: 700px;
+} */
+
+/* fluid */
+.parent {
+  background: #574b90;
+  /* color: #fff; */
+  margin: 20px auto;
+  padding: 3%;
+  width: 90%;
+  /* max-width: 1140px;
+  min-width: 500px; */
+
+  height: 100%;
+}

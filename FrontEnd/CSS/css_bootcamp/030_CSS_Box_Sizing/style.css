@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.test {
+  width: 350px;
+  height: 400px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+#one {
+  background: rgb(25, 82, 148);
+  padding: 50px;
+  border: 10px solid rgb(107, 159, 218);
+  box-sizing: content-box;
+}
+#two {
+  background: rgb(107, 159, 218);
+  box-sizing: border-box;
+  padding: 50px;
+  border: 10px solid rgb(25, 148, 25);
+}
+
+.child {
+  background: rgb(25, 82, 148);
+  padding: 10px 8px;
+  border: 10px solid rgb(107, 159, 218);
+  width: 32%;
+  float: left;
+  margin-left: 1%;
+}

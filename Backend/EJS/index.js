@@ -17,7 +17,7 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/rolldice', (req, res) => {
-  let random = Math.floor(Math.random() * 6) + 1;
+  let random = Math.floor(Math.random() * 6) + 1; 
   res.render("rolldice.ejs",{num: random});
 });
 

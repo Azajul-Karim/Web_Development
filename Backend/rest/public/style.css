@@ -1,0 +1,42 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f6f6f6;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: maroon;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.post {
+  background-color: #f5d4d4;
+  border: 1px solid #e2e2e2;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.post:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.username {
+  color: #223866;
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content {
+  color: #3d3d3d;
+  font-size: 15px;
+  margin-top: 5px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Post</title>
+  </head>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin: 0 auto;
+    }
+    label {
+      margin-bottom: 0.5rem;
+    }
+    input,
+    textarea {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.5rem;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <form method="post" action="/posts">
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" />
+      <label for="content">Content</label>
+      <textarea name="content" id="content" cols="30" rows="10"></textarea>
+      <button type="submit">Create Post</button>
+    </form>
+  </body>
+</html>
